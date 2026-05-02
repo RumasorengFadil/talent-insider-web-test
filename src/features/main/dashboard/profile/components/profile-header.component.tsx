@@ -1,10 +1,11 @@
+import Flower from "@/components/flower.componet";
 import { Button } from "@/components/ui/button";
 import { UserResponse } from "@/types/user-response";
-import { Edit, Flower } from "lucide-react";
+import { Edit } from "lucide-react";
 import Image from "next/image";
 
 type ProfileHeaderProps = {
-    user: UserResponse;
+    user: UserResponse | null;
     onEdit?: () => void;
 };
 

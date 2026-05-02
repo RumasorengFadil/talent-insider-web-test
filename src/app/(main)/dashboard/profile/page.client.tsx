@@ -16,9 +16,7 @@ export default function PageClient() {
             {/* Main Content */}
             <main className="max-w-7xl mx-auto px-4 md:px-6">
 
-                {user &&
-                    <ProfileHeader user={user} onEdit={() => { }} />
-                }
+                <ProfileHeader user={user} onEdit={() => { }} />
 
                 {/* Content Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-[485px_1fr] gap-6 mt-6 md:mt-10 pb-10">
