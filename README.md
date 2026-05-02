@@ -1,3 +1,45 @@
+## Result Preview
+<img width="1440" height="810" style= "marginBottom:20px" alt="Screenshot 2026-05-02 at 10 31 47" src="https://github.com/user-attachments/assets/e3c25a3c-13b7-4390-8df4-c8a47da92b20" />
+
+<p align="center">
+  <em>Halaman Login
+</p>
+<br />
+    
+<img width="1440" height="810" alt="Screenshot 2026-05-02 at 10 32 00" src="https://github.com/user-attachments/assets/1efa2d27-3d76-4aed-a2ab-2e323463dd5a" />
+<p align="center">
+  <em>Halaman Register
+</p>
+<br />
+
+<img width="1440" height="812" alt="Screenshot 2026-05-02 at 10 36 01" src="https://github.com/user-attachments/assets/b3b2f62f-1185-4e0e-833e-9a1f8a69e48f" />
+
+<img width="1440" height="812" alt="Screenshot 2026-05-02 at 10 36 25" src="https://github.com/user-attachments/assets/211347df-ba68-464c-8d42-42b4f60b8180" />
+<p align="center">
+  <em>Halaman Profile
+</p>
+<br />
+    
+<img width="1440" height="809" alt="Screenshot 2026-05-02 at 10 36 37" src="https://github.com/user-attachments/assets/90bf4866-e885-48dd-a9d2-6f31bf6572d1" />
+<p align="center">
+  <em>Halaman Properties
+</p>
+    
+> ⚠️ **Note:** Properties page preview is not available because the image asset is missing on the server.
+
+
+<br />
+
+## Features
+
+### User Features
+- Register & login account
+- View, filters and explore properties
+
+### Technical Features
+- API integration with backend
+- Responsive design (mobile-friendly)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
