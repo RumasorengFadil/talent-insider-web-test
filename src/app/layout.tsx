@@ -1,5 +1,10 @@
+import { AuthBootstrap } from "@/context/providers/AuthBootstrap";
+import { ReactQueryProvider } from "@/context/providers/react-query.provider";
+import { ENV } from "@/types/env.type";
+import { Construction } from "lucide-react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +14,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
 });
 
@@ -25,9 +35,21 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${openSans.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Talent Insider" />
+      </head>
+
+      <body className="min-h-full flex flex-col">
+        <ReactQueryProvider>
+          {process.env.NEXT_PUBLIC_ENV === ENV.CONSTRUCTION ? <Construction /> : <>
+            <AuthBootstrap />
+            {children}
+            <Toaster />
+          </>}
+        </ReactQueryProvider>
+      </body>
+    </html >
   );
 }
