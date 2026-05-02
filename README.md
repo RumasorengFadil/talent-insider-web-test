@@ -63,7 +63,16 @@ pnpm install
 bun install
 ```
 
-### 3. Run the development server
+## 3. Setup `.env.local`
+
+Cara Setup
+
+Copy file berikut:
+```bash
+cp .env.example .env.local
+```
+
+### 4. Run the development server
 ```
 bash
 npm run dev
